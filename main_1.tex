@@ -1,0 +1,123 @@
+\documentclass[10 pt]{article}
+\usepackage[a4paper,bottom = 10mm,left = 0.56in,right = 0.56in,top = 6.4mm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{textcomp}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\newcommand{\xfilll}[2][1ex]{
+\dimen0=#2\advance\dimen0 by #1
+\leaders\hrule height \dimen0 depth -#1\hfill}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}
+\renewcommand\labelitemi{\raisebox{0.4ex}{\tiny$\bullet$}}
+\renewcommand{\labelitemii}{$\cdot$}
+\pagenumbering{gobble}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    % pdftitle={Overleaf Example},
+    % pdfpagemode=FullScreen,
+    }
+\begin{document}
+\vspace*{42mm} 
+\hspace{-14pt}Pursuing {\bf Minor} in \textbf{Machine Intelligence and Data Science}
+\vspace{-10pt}
+\section*{\textcolor{blue}{\LARGE Scholastic Achievements}\xfilll[0pt]{0.5pt}}
+\vspace{-8pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\item Secured \textbf{All India Rank 232} in \textbf{JEE Advanced} among over 150 thousand candidates \hfill{\sl \small(2021)}
+
+\end{itemize}
+%\vspace{-19pt}
+
+\vspace{-22pt}
+\section*{\textcolor{blue}{\LARGE Key Projects}\xfilll[0pt]{0.5pt}}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Cinema A to Z}}\hfill{\sl \small (Autumn 2022)}\\
+	}{\it Guide: Prof. Kavi Arya \textbar} {\it Ongoing Course Project}\hfill{\sl \small IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Target to build a one stop user-friendly solution \textbf{Web application} which will help the user by giving all the ratings, cast, category/genre, user reviews
+		\item Using \textbf{Web-scraping} to extract reviews from IMDb, Rotten Tomatoes, and store in \textbf{SQL database}
+		\item Implementing a \textbf{Networking} system to share data resource with multiple applications and users
+		\item  Target to use \textbf{HTML, CSS, Bootstrap, Javascript} to make Web application more responsive
+	\end{itemize}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Rail Planner}}\hfill{\sl \small (Autumn 2022)}\\
+	}{\it Guide: Prof. Supratik Chakraborty \textbar} {\it Ongoing Course Project}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Developed software which integrates booking a journey, viewing and managing current journeys, and maintaining reviews for all journeys, taking inspiration from apps like \textbf{Eurail} and \textbf{IRCTC}
+		\item Implemented multiple data structures in C++, including \textbf{Linked Lists, Dictionaries, Binary Search Trees, Tries}, and \textbf{Priority Queues}, and utilized each of them within suitable components
+		%\item implemented the %\textbf{Knuth-Morris-Pratt algorithm} for pattern matching in strings.
+		\item Created an \textbf{admin interface} to add stations and journeys, and display the current database
+		\item Created a \textbf{user interface} to query journeys, look for reviews, plan journeys, and write reviews for past journeys
+	\end{itemize}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Portfolio Website}}\hfill{\sl \small (Autumn 2022)}\\
+	}{\it Guide: Prof. Kavi Arya \textbar} {\it Course Project: Software Systems Lab}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Developed  a \textbf{responsive} website containing various pages describing me and my details
+		\item Used \textbf{HTML, CSS, Javascript and Bootsrap} in the website to make it responsive and interactive
+		\item Hosted the website on IITB CSE servers by adding source files to the server using \textbf{SSH}
+	\end{itemize}
+	{\fontfamily{lmss}\selectfont
+		\textbf{{Tic-Tac-Toe}}\hfill{\sl \small (Autumn 2022)}\\
+	}{\it Guide: Prof. Kavi Arya \textbar} {\it Course Project: Software Systems Lab}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Developed a two-player tic-tac-toe using \textbf{Socket Programming in java}
+		\item The game can be played between two players with both players entering their commands in different terminals
+		\item Future plan to enable \textbf{remote play} between two players with one of the players starting the server
+	\end{itemize}
+		{\fontfamily{lmss}\selectfont
+		\textbf{{Image Generation using PCA}}}\hfill{\sl \small (Autumn 2022)}\\
+{\it Guide: Prof. Suyash P. Awate $|$ Course Project: Data Analysis and Interpretation} \hfill{\it IIT Bombay}
+\\\vspace{-15pt}
+\begin{itemize}[itemsep = -0.5 mm, leftmargin=*]
+	\item \textls[15]{Performed \textbf{dimensionality reduction, hyperplalne} fitting on fruit images and MNIST dataset using \textbf{PCA} in Python}, \textls[21]{Implemented a \textbf{generative model}, hence sampling some unseen data from the above implementation of hyperplane}
+\end{itemize}
+\vspace{\baselineskip}
+\vspace{-16pt}
+
+\section*{\textcolor{blue}{\LARGE Technical Skills}\xfilll[0pt]{0.5pt}}
+\vspace{-8pt}
+\begin{tabular}{p{4.5cm} p{13.5cm}}
+  \textbf{Programming:} &  C++, C, Python, Java, Bash, Awk, Sed \\
+  \textbf{Web Development:} & HTML, CSS, Bootstrap, JavaScript\\
+  \textbf{Software:} & Git, \LaTeX\\
+  \textbf{Packages:} & NumPy, Matplotlib, FLTK\\
+  \textbf{Documentation:} & Doxygen, Sphinx\\
+\end{tabular}
+
+\section*{\textcolor{blue}{\LARGE Extracurricular}\xfilll[0pt]{0.5pt}}
+\vspace{-8pt}
+
+% {\bf \large Creative Field}  \vspace{-4pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\vspace{-2pt}
+	\item Successfully completed a course under the \textbf{National Sports
+	Organization(NSO)}
+	\hfill{\sl (Autumn 2021)}
+    \item Designed a flying model of an \textbf{RC plane} powered by \textbf{BLDC motor} 
+	\hfill{\sl (Autumn 2022)}
+	\item Completed \LaTeX{} course in \textbf{Learner's Space}
+	\hfill{\sl (Summer 2022)}
+
+\end{itemize}
+\vspace{-2pt}
+  
+
+
+
+\end{document}
