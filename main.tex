@@ -1,4 +1,4 @@
-\documentclass[12 pt]{article}
+\documentclass[10 pt]{article}
 \usepackage[a4paper,bottom = 10mm,left = 0.56in,right = 0.56in,top = 6.4mm]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -28,7 +28,7 @@
     }
 \begin{document}
 \vspace*{50mm}
-\hspace{-14pt}Pursuing {\bf Minor} in \textbf{Machine Intelligence and Data Science}
+\hspace{-14pt}Pursuing \textbf{Honors} in \textbf{Computer Science} and {\bf Minor} in \textbf{Machine Intelligence and Data Science}
 \vspace{-10pt}
 \section*{\textcolor{blue}{\LARGE Scholastic Achievements}\xfilll[0pt]{0.5pt}}
 \vspace{-8pt}
@@ -44,93 +44,143 @@
 \vspace{-22pt}
 \section*{\textcolor{blue}{\LARGE Key Projects}\xfilll[0pt]{0.5pt}}
 {\fontfamily{lmss}\selectfont
-		\textbf{{Cinema A to Z}}\hfill{\sl \small (Autumn 2022)}\\
-	}{\it Guide: Prof. Kavi Arya \textbar} {\it Ongoing Course Project}\hfill{\sl \small IIT Bombay}\\
+		\textbf{{Neural Quest}}\hfill{\sl \small (May-Present 2023)}\\
+	}{\it Seasons of Code, Ongoing}\hfill{\sl \small Institute Technical Council, IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item  Researched, developed, implemented and evaluated diverse deep learning models for computer vision classification.
+		\item Developed image prediction model for \textbf{MNIST} dataset from scratch using \textbf{NumPy} and \textbf{matplotlib} libraries
+  and obtained an accuracy of \textbf{93} \% and \textbf{95} \% using \textbf{PyTorch} and \textbf{torchvision} evaluated on number of correct labels.
+		\item Implemented classification model for CIFAR-10 using \textbf{convolutional neural network} and got accuracy of \textbf{81.28} \%.
+		\item  Future plan to implement \textbf{Fast Gradient Sign Method (FGSM)} Attack on the \textbf{MNIST} image prediction model
+	\end{itemize}
+ {\fontfamily{lmss}\selectfont
+		\textbf{{Blockchain Technology}}\hfill{\sl \small (May-Present 2023)}\\
+	}{\it Summer of Science, Ongoing}\hfill{\sl \small Institute Technical Council, IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item  Studied basics of blockchain technology, including Bitcoin transaction security and defense against potential attacks.
+  \item Studied \textbf{selfish mining attacks, Slasher}, and \textbf{PoS} in blockchain, Slasher penalizes, PoS validates based on staking.
+  \item Exploring consensus algorithms such as \textbf{PBFT} and \textbf{Raft}, understanding their role in achieving fault-tolerance and consensus in distributed systems.
+	\end{itemize}
+ 	{\fontfamily{lmss}\selectfont
+		\textbf{{IPCP Prefetcher for Spec and Graph Workloads}}\hfill{\sl \small (spring 2023)}\\
+	}{\it Guide: Prof. Biswa \textbar} {\it Course Project:  Computer Architecture}\hfill{\sl \small IIT Bombay}\\
 	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
 		\vspace{-16pt}
-		\item Target to build a one stop user-friendly solution \textbf{Web application} which will help the user by giving all the ratings, cast, category/genre, user reviews
-		\item Using \textbf{Web-scraping} to extract reviews from IMDb, Rotten Tomatoes, and store in \textbf{SQL database}
-		\item Implementing a \textbf{Networking} system to share data resource with multiple applications and users
-		\item  Target to use \textbf{HTML, CSS, Bootstrap, Javascript} to make Web application more responsive
+		\item Obtained an average 1.05x speedup in \textbf{IPC} on various traces by enhancing the \textbf{IPCP prefetcher} using \textbf{champsim}.
+		\item Increased \textbf{cache hit rates} and \textbf{prefetch accuracy} in caches through customized modifications in IPCP prefetcher.
+	\end{itemize}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Cinema A to Z}}\hfill{\sl \small (Autumn '22)}\\
+	}{\it Guide: Prof. Kavi Arya \textbar} {\it Course Project: Software Systems Lab}\hfill{\sl \small IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Developed a comprehensive movie and TV show database by utilizing \textbf{web scraping} techniques on IMDb, Rotten Tomatoes, extracting crucial data such as titles, ratings, genres, user reviews, similar movies, plot and cast information.
+		\item Designed, executed, and successfully deployed an \textbf{SQL} database to efficiently store and manage the scraped data.
+		\item Constructed a user-friendly website using \textbf{PHP}, allowing users to create accounts, log in, and personalize their movie watching experience by liking, watching, and adding or removing movies, TV shows, and anime to their watchlist.
+		\item  Demonstrated proficiency in front-end development by designing an intuitive and visually appealing interface, enabling users to navigate through the vast collection of movies, TV shows, and anime, and interact with their  watchlist.
 	\end{itemize}
 {\fontfamily{lmss}\selectfont
 		\textbf{{Rail Planner}}\hfill{\sl \small (Autumn 2022)}\\
 	}{\it Guide: Prof. Supratik Chakraborty \textbar} {\it Ongoing Course Project}\hfill{\sl \small IIT Bombay}\\
 	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
 		\vspace{-16pt}
-		\item Developed software which integrates booking a journey, viewing and managing current journeys, and maintaining reviews for all journeys, taking inspiration from apps like \textbf{Eurail} and \textbf{IRCTC}
-		\item Implemented multiple data structures in C++, including \textbf{Linked Lists, Dictionaries, Binary Search Trees, Tries}, and \textbf{Priority Queues}, and utilized each of them within suitable components
-		\item implemented the \textbf{Knuth-Morris-Pratt algorithm} for pattern matching, searching in strings.
-		\item Created an \textbf{admin interface} to add stations and journeys, and display the current database
-		\item Created a \textbf{user interface} to query journeys, look for reviews using \textbf{ Maximum Priority Queue} to filter the reviews above a \textbf{threshhold value}, plan journeys, and write reviews for past journeys
-		%\item For a \textbf{Doublylinkedlist} with n elements, using additional \textbf{storage space} of amount \textbf{n/K}, for a given \textbf{K}, choosing pivot in atmost \textbf{O(K)} time to impliment \textbf{QuickSort} algorithm.
+		\item Implemented multiple data structures and alogorithms in C++, including \textbf{Linked Lists, Dictionaries, Binary Search Trees, Tries},\textbf{Priority Queues}, and \textbf{BFS, DFS, KMP} and utilized each of them within suitable components.
+\item Implemented {\bf graph} data structure to find the shortest route between two stations in the multi-rail network system.
+\item Implemented an interface for rating and filtering system for the journey reviews using \textbf{Heap and Priority Queues}.
+	\end{itemize}
+  	{\fontfamily{lmss}\selectfont
+		\textbf{{Goldreich Levin }}\hfill{\sl \small (spring 2023)}\\
+	}{\it Guide: Prof. Manoj Prabhakaran \textbar} {\it Reading Project:  Cryptography \& Network security }\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item  Studied about \textbf{hardcore predicates} for a \textbf{one way function, Markov’s inequality, pair-wise
+independent randomness}, \textbf{Goldreich Levin} Theorem and its
+proof in details along with an overview of \textbf{Chebychev’s inequality}.
+	\end{itemize}
+ \newpage
+ \vspace{-16pt}
+\section*{\textcolor{blue}{\LARGE Other Projects}\xfilll[0pt]{0.5pt}}
+	{\fontfamily{lmss}\selectfont
+		\textbf{{Best Offset Prefetcher}}\hfill{\sl \small (spring 2023)}\\
+	}{\it Guide: Prof. Biswa \textbar} {\it Lab Assignment:  Computer Architecture Lab}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Successfully developed and integrated the best offset prefetcher using \textbf{Champsim}, a powerful simulation platform.
+		\item Optimized memory access and reduced cache misses, resulting in improved system efficiency and faster data prefetching.
+	\end{itemize}
+ 	{\fontfamily{lmss}\selectfont
+		\textbf{{Sliding Puzzle}}\hfill{\sl \small (spring 2023)}\\
+	}{\it Guide: Prof. Ashutosh Gupta \textbar} {\it Course Assignment:  Logic for Computer Science}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Developed SAT-based puzzle solver by implementing rules and constraints and finding optimal moves within limits.
+		\item Implemented efficient Python algorithm using Z3 solver and added clauses for solving , showcasing logical reasoning.
+	\end{itemize}
+ 	{\fontfamily{lmss}\selectfont
+		\textbf{{Socket Programming: File transfer}}\hfill{\sl \small (Spring 2023)}\\
+	}{\it Guide: Prof. Bhaskaran Raman \textbar} {\it Lab Assignment: Computer Networks Lab}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+    \item Implemented a \textbf{client to server} network for searching and downloading files in a specified topology using \textbf{sockets}.
+    \item Incorporated \textbf{rate limiting} on the client-side for efficient handling of \textbf{multiple client} connections to the server.
 	\end{itemize}
 	{\fontfamily{lmss}\selectfont
 		\textbf{{Tic-Tac-Toe}}\hfill{\sl \small (Autumn 2022)}\\
-	}{\it Guide: Prof. Kavi Arya \textbar} {\it Course Project: Software Systems Lab}\hfill{\sl \small IIT Bombay}\\
+	}{\it Guide: Prof. Kavi Arya \textbar} {\it Lab Assignment: Software Systems Lab}\hfill{\sl \small IIT Bombay}\\
 	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
 		\vspace{-16pt}
-		\item Developed a two-player tic-tac-toe using \textbf{Socket Programming, inter-process communication}
-		\item The game is played between two players with players entering their commands in different terminals
-		\item Future plan to enable \textbf{remote play} between two players with one of the players starting the server
-	\end{itemize}
+		\item Developed a two-player Tic-Tac-Toe game using a Peer-to-Peer networking model, usiing the Socket and ServerSocket.
+\item Implemented message exchange mechanisms between players using ports, enabling real-time gameplay and interaction.
+\end{itemize}
 	%\newpage
 	{\fontfamily{lmss}\selectfont
 		\textbf{{Portfolio Website}}\hfill{\sl \small (Autumn 2022)}\\
-	}{\it Guide: Prof. Kavi Arya \textbar} {\it Course Project: Software Systems Lab}\hfill{\sl \small IIT Bombay}\\
+	}{\it Guide: Prof. Kavi Arya \textbar} {\it Lab Assignment: Software Systems Lab}\hfill{\sl \small IIT Bombay}\\
 	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
 		\vspace{-16pt}
-		\item Developed  a \textbf{responsive} website containing various pages describing me and my details
-		\item Used \textbf{HTML, CSS, Javascript and Bootsrap} in the website to make it responsive and interactive
-		\item Hosted the website on IITB CSE servers by adding source files to the server using \textbf{SSH}
+		\item Designed user-friendly website on IITB CSE server using \textbf{SSH}, with various pages describing me and my projects.
+		\item Used \textbf{HTML, CSS, Javascript, and Bootstrap} for developing the website and to make it responsive and interactive
 	\end{itemize}
-\vspace{-16pt}
-\section*{\textcolor{blue}{\LARGE Other Projects}\xfilll[0pt]{0.5pt}}
+ 	%\newpage
 	{\fontfamily{lmss}\selectfont
 		\textbf{{Random Walkers}}\hfill{\sl \small (Autumn 2022)}\\
-	}{\it Guide: Prof. Suyash P. Awate \textbar} {\it Course Project: Data Analysis and Interpretation}\hfill{\sl \small IIT Bombay}\\
+	}{\it Guide: Prof. Suyash P. Awate \textbar} {\it Lab Assignment: Data Analysis and Interpretation}\hfill{\sl \small IIT Bombay}\\
 	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
 		\vspace{-16pt}
-		\item Simulated N random walkers in \textbf{Python}, and obtained the \textbf{Gaussian Distribution plot} of their final locations using \textbf{Matplotlib} 
- and verified the \textbf{Law of Large Numbers} by analysing the true and empirically computed mean and variance
+		\item Simulated N random walkers in \textbf{Numpy} and obtained the \textbf{Gaussian Distribution} plot of their final locations, verifying the \textbf{Law of Large Numbers} by comparing the true and computed mean and variance of the final positions.
 	\end{itemize}
 	{\fontfamily{lmss}\selectfont
 		\textbf{{Maze Ball}}\hfill{\sl \small (Spring 2022)}\\
 	}{\it Guide: Prof. Rushikesh K. Joshi \textbar} {\it Course Project : Abstractions and Paradigms}\hfill{\sl \small IIT Bombay}\\
 	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
 		\vspace{-16pt}
-		\item Programmed an Maze Ball with the help of \textbf{FLTK library} using \textbf{Inheritance} and \textbf{Event Handling}
+		\item Programmed an Maze Ball with the help of \textbf{FLTK library} by utilizing Inheritance and Event Handling techniques.
 	\end{itemize}
-	{\fontfamily{lmss}\selectfont
-		\textbf{{Image Generation using PCA}}}\hfill{\sl \small (Autumn 2022)}\\
-{\it Guide: Prof. Suyash P. Awate $|$ Course Project: Data Analysis and Interpretation} \hfill{\it IIT Bombay}
-\\\vspace{-15pt}
-\begin{itemize}[itemsep = -0.5 mm, leftmargin=*]
-	\item \textls[15]{Performed \textbf{dimensionality reduction, hyperplalne} fitting on fruit images and MNIST dataset using \textbf{PCA} in Python}, \textls[21]{Implemented a \textbf{generative model}, hence sampling some unseen data from the above implementation of hyperplane}
-\end{itemize}
 \vspace{\baselineskip}
 \vspace{-13pt}
 
 \section*{\textcolor{blue}{\LARGE Technical Skills}\xfilll[0pt]{0.5pt}}
 \vspace{-8pt}
 \begin{tabular}{p{4.5cm} p{13.5cm}}
-  \textbf{Programming:} &  C++, C, Python, Java, Bash, Awk, Sed \\
+  \textbf{Programming:} &  C++, Python, Bash, Awk, Sed, Markdown, Java, Assembly, Prolog, FLTK\\
   \textbf{Web Development:} & HTML, CSS, Bootstrap, JavaScript\\
-  \textbf{Software:} &  Git, \LaTeX\\
-  \textbf{Packages:} & NumPy, Matplotlib, FLTK\\
-  \textbf{Documentation:} & Doxygen, Sphinx\\
+  \textbf{Software:} &  Git, \LaTeX, GDB, Sphinx, Doxygen, Jupyter, Docker, Wireshark\\
+  \textbf{Packages:} & NumPy, Matplotlib, FLTK, Pandas, Torchvision, Pytorch\\
 \end{tabular}
  \section*{\textcolor{blue}{\LARGE Courses Undertaken}\xfilll[0pt]{0.5pt}}
 \vspace{-12pt}
 \hspace{-5pt}
   \begin{tabular}{p{40mm} p{13.2cm}}
-    \vspace{-3pt}\textbf{Computer Science:} & \vspace{-5pt}Data Structures and Algorithms + Lab*, Discrete Structures*, Data Analysis and Interpretation*, Software Systems Lab*, Design and Analysis of Algorithms**, Digital Logic Design + Lab**, Computer Networks + Lab**, Logic for Computer Science**, Abstractions and Paradigms in Programming, Computer Programming and Utilization\\
+    \vspace{-3pt}\textbf{Computer Science:} & \vspace{-5pt}Cryptography and Network Security, Data Structures and Algorithms + Lab, Discrete Structures, Data Analysis and Interpretation, Software Systems Lab, Design and Analysis of Algorithms, Digital Logic Design + Lab, Computer Networks + Lab, Logic for Computer Science, Abstractions and Paradigms in Programming, Computer Programming and Utilization\\
     \vspace{-5pt}\textbf{Mathematics:} & \vspace{-5pt}Calculus, Linear Algebra, Differential Equations\\
-    \vspace{-5pt}\textbf{Others:} & \vspace{-5pt}Introduction to Electrical and Electronics Circuits*, Quantum Physics and Application, Basics of Electricity and Magnetism, Engineering Graphics and Drawing, Physical Chemistry, Organic and Inorganic Chemistry, Biology\\
+    \vspace{-5pt}\textbf{Others:} & \vspace{-5pt}Introduction to Electrical and Electronics Circuits, Quantum Physics and Application, Basics of Electricity and Magnetism, Engineering Graphics and Drawing, Physical Chemistry, Organic and Inorganic Chemistry, Biology\\
   \end{tabular}
   \vspace{1pt}\\
-  \hspace*{120mm}{\sl *{\it to be completed in Autumn 2022}}\\
-  \hspace*{120mm}{\sl **{\it to be completed in Spring 2023}}
 \vspace{-10pt}
 
 \section*{\textcolor{blue}{\LARGE Extracurricular}\xfilll[0pt]{0.5pt}}
@@ -155,7 +205,7 @@ of a \textbf{technical document} having equations, matrices, tables and lines of
 	\end{itemize}
 	{\fontfamily{lmss}\selectfont
 		\textbf{{RC Plane}}}
-	 \hfill{\sl \small (Spring 2022)}\\
+	 \hfill{\sl \small (Autumn 2022)}\\
 {\it Aeromodelling Club}\hfill{\sl \small IIT Bombay}\\\vspace{-16pt}
 \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
 \item Constructed a remote controlled plane out of depron sheets keeping in mind the wing loading, wing shape, air drag, balance and weight for a perfect take off, flight and landing
