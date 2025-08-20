@@ -1,0 +1,325 @@
+\documentclass[10pt]{article}
+
+% Page layout
+\usepackage[a4paper,bottom=10mm,left=0.56in,right=0.56in,top=6.4mm]{geometry}
+
+% Math & formatting
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{verbatim}
+
+% Graphics & tables
+\usepackage{graphicx}
+\usepackage{tabularx} % for tabularx environment
+
+% Font Awesome icons
+\usepackage{fontawesome5} % provides \faGithub, \faLinkedin, etc.
+
+% Hyperlinks
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+% Custom column type for tabularx
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% Custom commands
+\newcommand{\xfilll}[2][1ex]{
+  \dimen0=#2\advance\dimen0 by #1
+  \leaders\hrule height \dimen0 depth -#1\hfill
+}
+
+% Section formatting
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}
+
+% Item symbols
+\renewcommand\labelitemi{\raisebox{0.4ex}{\tiny$\bullet$}}
+\renewcommand{\labelitemii}{$\cdot$}
+
+% No page numbers
+\pagenumbering{gobble}
+
+\begin{document}
+\begin{tabularx}{\linewidth}{@{} C @{}} 
+    \Huge{Pagoti Hemanth Naidu} \\[7.5pt] 
+    \href{https://github.com/hemanth-117}{\raisebox{-0.05\height}\faGithub\ hemanth-117} \ $|$ \  
+    \href{https://leetcode.com/u/h210050117/}{\raisebox{-0.05\height}\faCode\ LeetCode} \ $|$ \  
+    \href{https://codeforces.com/profile/Hemanth-117}{\raisebox{-0.05\height}\faCode\ Codeforces} \ $|$ \  
+    \href{https://www.linkedin.com/in/hemanth-naidu-pagoti-06727a28a/}{\raisebox{-0.05\height}\faLinkedin\ Hemanth-Naidu-Pagoti} \ $|$ \  
+    \href{mailto:h210050117@iitb.ac.in}{\raisebox{-0.05\height}\faEnvelope\ naiduhemanth369@gmail.com} \
+\end{tabularx}
+\vspace{-8pt}
+    \begin{tabular}{  m{3cm}  m{3.5cm} m{6cm} m{2cm} m{1.3cm} } 
+      \hline
+      \textbf{Examination}  &
+      \textbf{University} &
+      \textbf{Institute} &
+      \textbf{Year} &
+      \textbf{CPI/\%} \\
+      \hline
+        Graduation &
+        IIT Bombay & 
+        IIT Bombay &
+        2025 &
+        8.31 \\
+        Intermediate &
+        CBSE &
+        Narayana Junior College &
+        2021 &
+        94.60\% \\
+        Matriculation &
+        CBSE &
+       MP \& EV EM School&
+        2019 &
+        95\% \\
+      \hline
+    \end{tabular}
+\section*{\textcolor{blue}{\LARGE Scholastic Achievements}\xfilll[0pt]{0.5pt}}
+\vspace{-8pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\item Secured \textbf{All India Rank 232} in \textbf{JEE Advanced} among over 150 thousand candidates \hfill{\sl \small(2021)}
+		\item Achieved \textbf{All India Rank 436} in \textbf{JEE Main} among over 1.2 million candidates \hfill{\sl \small(2021)}
+		\item Secured \textbf{State Rank 48} in AP-EAMCET, \textbf{State Rank 185} in TS-EAMCET. \hfill{\sl \small (2021)}
+		\item Secured \textbf{All India Rank 364} in \textbf{KVPY} among over 50 thousand candidates \hfill{\sl \small(2020)}
+		\item Secured \textbf{first position} in \textbf{JLR Hackathon 4.0 global event} among over \textbf{10} teams. \hfill{\sl \small(2024)}
+\end{itemize}
+% \vspace{-19pt}
+\vspace{-22pt}
+\section*{\textcolor{blue}{\LARGE Experience}\xfilll[0pt]{0.5pt}}
+\vspace{-1pt}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Dream11}}\hfill{\sl \small (July - Present 2025)}\\
+	}{\it Software Development \textbar} {\it Full -Time}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item  Currently undergoing training in React-Native with TypeScript, Vert.x framework, and RxJava.
+		
+	\end{itemize}
+\vspace{-8pt}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Jaguar Land Rover}}\hfill{\sl \small (May-July 2024)}\\
+	}{\it Software Development \textbar} {\it Company Internship}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item  Automated data extraction from \textbf{GitLab, Jira}, and \textbf{Snyk} using \textbf{APIs} and \textbf{GCP} Cloud Functions of \textbf{SDV} Project.
+            \item Created \textbf{Tableau dashboards} to visualize data insights, linking \textbf{Jira tickets} with \textbf{GitLab commits} for analysis.
+            \item Leveraged \textbf{Microsoft PHI3} for suggestions, code ratings, and tracking requirements completion in \textbf{Jira} and \textbf{GitLab}.
+		
+	\end{itemize}
+\vspace{-8pt}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Jaguar Land Rover}}\hfill{\sl \small (June-July 2024)}\\
+	}{\it RnD \textbar} {\it Company Internship}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item  Developed algorithm to \textbf{minimize speed changes} between two points, considering streetlight frequency variations.
+            \item Simulated traffic route optimization algorithm with random \textbf{frequencies, distances} for \textbf{minimal speed variation}.
+		
+	\end{itemize}
+\vspace{-19pt}
+\section*{\textcolor{blue}{\LARGE Key Projects}\xfilll[0pt]{0.5pt}}
+\vspace{-1pt}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Ablation Study on NOSMOG}}\hfill{\sl \small (Jun-July 2025)}\\
+	}{\it Guide: Prof. Abir De \textbar} {\it Course Project: Learning-with-Graphs}\hfill{\sl \small IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+\item Implemented \textbf{GraphSAGE} teacher and MLP student models using \textbf{DeepWalk} generated positional embeddings.
+\item Implimented \textbf{knowledge distillation} framework integrating \textbf{cross-entropy, KL, similarity, adversarial losses}.
+\item Benchmarked inductive and transductive settings, analyzing accuracy-inference tradeoffs across multiple baselines.  
+
+	\end{itemize}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Reinforcement Learning and Decision Making}}\hfill{\sl \small (Aug-July 2025)}\\
+	}{\it Guide: Prof. Shivaram Kalyanakrishnan \textbar} {\it Course Project: Foundations Learning Agents}\hfill{\sl \small IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+\item Implemented diverse bandit algorithms (\textbf{UCB, KL-UCB, Thompson Sampling}) evaluating regret minimization.
+
+\item Implemented \textbf{Value Iteration, Policy Iteration} and \textbf{Linear Programming} to compute optimal policies on \textbf{MDP}.
+\item Built \textbf{policy extraction} and \textbf{evaluation} for solving gridworld tasks and deriving optimal policies for a driving agent.  
+
+	\end{itemize}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Sclp C-like Compiler}}\hfill{\sl \small (Jan-Apr 2024)}\\
+	}{\it Guide: Prof. Uday Khedker \textbar} {\it Course Project: Implementation of Programming Languages}\hfill{\sl \small IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+  \item  Developed a \textbf{compiler} for a subset of C, supporting \textbf{functions}, multiple \textbf{scope levels} and \textbf{control sequences}.
+\item Utilized \textbf{Lex} for efficient tokenizing and \textbf{Yacc} for systematic parsing to construct \textbf{ASTs} and \textbf{Three Address Codes}.
+\item Designed \textbf{RTL} and \textbf{ASM} classes using \textbf{Object Oriented Programming paradigm} following \textbf{class hierarchies}.
+	\end{itemize}
+\vspace{-6pt}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Fake News Detection}}\hfill{\sl \small (Sept-Oct 2023)}\\
+	}{\it Guide: Prof. Pushpak Bhattacharyya \textbar} {\it Course Project: Natural Language Processing}\hfill{\sl \small IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+      \item Implemented a \textbf{fake news detection} model using \textbf{statistical, neural}, and \textbf{external} text classification features.
+      \item Enhanced \textbf{stance detection} by integrating \textbf{skip-thought} vectors, \textbf{TF-IDF}, and heuristic-based external features.
+      \item Optimized model with \textbf{cross-entropy loss}, classifying news into agree, disagree, discuss, and unrelated.
+	\end{itemize}
+\vspace{-6pt}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Cryptonite}}\hfill{\sl \small (Jan-Apr 2024)}\\
+	}{\it Guide: Prof. Vinay Ribeiro \textbar} {\it Course Project: Blockchains, Cryptocurrencies, and Smart Contracts}\hfill{\sl \small IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item  Developed a discrete time event simulator modelling a \textbf{blockchain cryptocurrency} network with honest miners.
+		\item Simulated message latency, \textbf{proof of work, transaction generation, verification and blockchain forks}.
+      \item Incorporated node \textbf{hyperparameters} in the network evaluating the results of \textbf{selfish mining attacks}.
+	\end{itemize}
+\vspace{-6pt}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Image Captioning}}\hfill{\sl \small (Sept-Oct 2023)}\\
+	}{\it Guide: Prof. Preethi Jyothi \textbar} {\it Course Project: Artificial Intelligence and Machine Learning}\hfill{\sl \small IIT Bombay}\\
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+    \item Developed an image captioning model using \textbf{PyTorch} with visual attention for precise and accurate caption generation.
+    
+    \item Implemented \textbf{Bahdanau attention} in the model to focus on key image areas for enhanced caption quality.
+    \item Evaluated the model performance using \textbf{BLEU} and \textbf{METEOR} scores for quality and accuracy assessment.
+	\end{itemize}
+ % \selectfont
+	% 	\textbf{xv6 Optimization}\hfill{\sl \small (Autumn '23)}\\
+	% }{\it Guide: Prof. Purushottam Kulkarni \textbar} {\it Course Project : Operating Systems}\hfill{\sl \small IIT Bombay}\\
+ \vspace{-6pt}
+{\fontfamily{lmss}\selectfont
+		\textbf{{xv6 Optimization}}\hfill{\sl \small (Sept-Oct 2023)}\\
+	}{\it Guide: Prof. Purushottam Kulkarni \textbar} {\it Course Project: Operating Systems}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+        \item Developed advanced \textbf{system calls}, and process \textbf{scheduler} algorithms to the xv6 code for improved performance.
+        \item Implemented \textbf{Lazy page allocation} with page fault handling functionalities to xv6 memory management system.
+        \item Implemented \textbf{threading, robust synchronization mechanisms}, and filesystem operations for concurrency in xv6.
+	\end{itemize}
+{\fontfamily{lmss}\selectfont
+		\textbf{{IPCP Prefetcher for Spec and Graph Workloads}}\hfill{\sl \small (Apr-May 2023)}\\
+	}{\it Guide: Prof. Biswa \textbar} {\it Course Project:  Computer Architecture}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Obtained an average \textbf{1.05}x speedup in \textbf{IPC} on various traces by enhancing the \textbf{IPCP prefetcher} using \textbf{champsim}.
+		\item Increased \textbf{cache hit rates} and \textbf{prefetch accuracy} in caches through customized modifications in IPCP prefetcher.
+	\end{itemize}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Neural Quest}}\hfill{\sl \small (May-july 2023)}\\
+	}{\it Seasons of Code}\hfill{\sl \small Institute Technical Council, IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Developed image prediction model for \textbf{MNIST} dataset from scratch using \textbf{NumPy} and \textbf{matplotlib} libraries
+  and obtained an accuracy of \textbf{93} \% and \textbf{95} \% using \textbf{PyTorch} and \textbf{torchvision} evaluated on number of correct labels.
+		\item Implemented classification model for CIFAR-10 using \textbf{convolutional neural network} and got accuracy of \textbf{81.28} \%.
+	\end{itemize}
+ {\fontfamily{lmss}\selectfont
+		\textbf{{Blockchain Technology}}\hfill{\sl \small (May-july 2023)}\\
+	}{\it Summer of Science}\hfill{\sl \small Institute Technical Council, IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item  Studied basics of blockchain technology, including Bitcoin transaction security and defense against potential attacks.
+  \item Studied \textbf{selfish mining attacks, Slasher}, and \textbf{PoS} in blockchain, Slasher penalizes, PoS validates based on staking.
+  \item Exploring consensus algorithms such as \textbf{PBFT} and \textbf{Raft}, their role in achieving consensus in distributed systems.
+	\end{itemize}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Cinema A to Z}}\hfill{\sl \small (Sept-Oct 2022)}\\
+	}{\it Guide: Prof. Kavi Arya \textbar} {\it Course Project: Software Systems Lab}\hfill{\sl \small IIT Bombay}\\
+
+		\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Developed a Movie and TV show database by utilizing \textbf{web scraping} techniques on IMDb, Rotten Tomatoes \textbf{API}.
+		\item Designed, executed, and successfully deployed an \textbf{SQL} database to efficiently store and manage the scraped data.
+		\item Built a user-friendly website using \textbf{PHP}, allowing users to create accounts, log in, and personalize their account.
+	\end{itemize}
+{\fontfamily{lmss}\selectfont
+		\textbf{{Rail Planner}}\hfill{\sl \small (Aug-Oct 2022)}\\
+	}{\it Guide: Prof. Supratik Chakraborty \textbar} {\it Course Project}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Implemented multiple \textbf{data structures} and \textbf{alogorithms} in C++, utilized each of them within suitable components.
+\item Implemented {\bf graph} data structure to find the shortest route between two stations in the multi-rail network system.
+\item Implemented an interface for rating and filtering system for the journey reviews using \textbf{Heap and Priority Queues}.
+	\end{itemize}
+ \vspace{-16pt}
+\section*{\textcolor{blue}{\LARGE Other Projects}\xfilll[0pt]{0.5pt}}
+	{\fontfamily{lmss}\selectfont
+		\textbf{{Best Offset Prefetcher}}\hfill{\sl \small (Mar-Apr 2023)}\\
+	}{\it Guide: Prof. Biswa \textbar} {\it Lab Assignment:  Computer Architecture Lab}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Successfully developed and integrated the best offset prefetcher using \textbf{Champsim}, a powerful simulation platform.
+		\item Optimized memory access and reduced cache misses, resulting in improved system efficiency and faster data prefetching.
+	\end{itemize}
+ 	{\fontfamily{lmss}\selectfont
+		\textbf{{Sliding Puzzle}}\hfill{\sl \small (Jan-Apr 2023)}\\
+	}{\it Guide: Prof. Ashutosh Gupta \textbar} {\it Course Assignment:  Logic for Computer Science}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+		\item Developed SAT-based puzzle solver by implementing rules and constraints and finding optimal moves within limits.
+		\item Implemented efficient Python algorithm using Z3 solver and added clauses for solving , showcasing logical reasoning.
+	\end{itemize}
+ 	{\fontfamily{lmss}\selectfont
+		\textbf{{Socket Programming: File transfer}}\hfill{\sl \small (Jan-Apr 2023)}\\
+	}{\it Guide: Prof. Bhaskaran Raman \textbar} {\it Lab Assignment: Computer Networks Lab}\hfill{\sl \small IIT Bombay}\\
+	\begin{itemize}[itemsep = -0.8 mm, leftmargin=*]
+		\vspace{-16pt}
+    \item Implemented a \textbf{client to server} network for searching and downloading files in a specified topology using \textbf{sockets}.
+    \item Incorporated \textbf{rate limiting} on the client-side for efficient handling of \textbf{multiple client} connections to the server.
+	\end{itemize}
+\vspace{\baselineskip}
+\vspace{-13pt}
+
+\section*{\textcolor{blue}{\LARGE Technical Skills}\xfilll[0pt]{0.5pt}}
+\vspace{-8pt}
+\begin{tabular}{p{4.5cm} p{13.5cm}}
+  \textbf{Programming:} &  C++, Python, Java, Assembly \\
+  \textbf{Web Development:} & React, React-Native, JavaScript\\
+  \textbf{Software:} &  Git, \LaTeX, GDB, Sphinx, Doxygen, Jupyter, Docker, Wireshark, Gitlab , Jira, Snyk\\
+  \textbf{Packages:} & NumPy, Matplotlib, FLTK, Pandas, Torchvision, Pytorch\\
+\end{tabular}
+ \section*{\textcolor{blue}{\LARGE Courses Undertaken}\xfilll[0pt]{0.5pt}}
+\vspace{-12pt}
+\hspace{-5pt}
+  \begin{tabular}{p{40mm} p{13.2cm}}
+    \vspace{-3pt}\textbf{Computer Science:} & \vspace{-5pt}Operating Systems, Artificial Intelligence and Machine Learning, Implementation of Programming Languages, Automata Theory, Database and Information Systems, Cryptography and Network Security, Data Structures and Algorithms, Discrete Structures, Data Analysis and Interpretation, Software Systems Lab, Design and Analysis of Algorithms, Digital Logic Design, Computer Networks, Logic for Computer Science, Abstractions and Paradigms in Programming\\
+  \end{tabular}
+  \vspace{1pt}\\
+\vspace{-10pt}
+
+% \section*{\textcolor{blue}{\LARGE Extracurricular}\xfilll[0pt]{0.5pt}}
+% \vspace{-8pt}
+
+% % {\bf \large Creative Field}  \vspace{-4pt}
+% \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+% \vspace{-2pt}
+% 	\item Successfully completed a course under the \textbf{National Sports
+% 	Organization(NSO)}
+% 	\hfill{\sl (Autumn 2021)}
+% 	\item Implemented LaTeX for assignments on text formatting, résumé design, and technical documents
+% 	\hfill{\sl (Summer 2022)}
+% 	\item Constructed a remote-controlled plane with optimized wing loading, shape, drag, balance, and weight.
+% 	\hfill{\sl (Autumn 2022)}
+%      % \item Hobbies include table tennis, pool, foosball and video games.
+% 	\end{itemize}
+
+%   \vspace{-2pt}
+% \vspace{-2pt}
+\end{document}
