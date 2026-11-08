@@ -1,0 +1,49 @@
+name: Build and Update Resume PDF
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'README.md'
+      - '.gitignore'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume_source.tex
+
+      - name: Rename PDF to resume.pdf
+        run: |
+          mv resume_source.pdf resume.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: resume.pdf
+
+      - name: Commit and push updated PDF
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f resume.pdf
+          if git diff --staged --quiet; then
+            echo "No changes in resume.pdf"
+          else
+            git commit -m "chore: auto-update resume.pdf [skip ci]"
+            git push origin HEAD:master
+          fi
