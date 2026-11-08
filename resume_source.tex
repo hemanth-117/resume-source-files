@@ -1,0 +1,217 @@
+
+\documentclass[10pt,a4paper]{article}
+
+%-------------------- Packages --------------------
+\usepackage[
+    a4paper,
+    top=10mm,
+    bottom=10mm,
+    left=0.6in,
+    right=0.6in
+]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+%-------------------- General Formatting --------------------
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.05}
+
+% Section headings
+\titleformat{\section}
+    {\large\bfseries}
+    {}
+    {0em}
+    {}
+    [\titlerule]
+
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+
+% Bullet formatting
+\renewcommand\labelitemi{\raisebox{0.3ex}{\tiny$\bullet$}}
+\setlist[itemize]{
+    leftmargin=1.2em,
+    itemsep=1pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+
+%-------------------- Custom Commands --------------------
+
+\newcommand{\resumeSection}[1]{
+    \section*{#1}
+}
+
+\newcommand{\resumeEntry}[2]{
+    \textbf{#1}\hfill{\small\textit{#2}}\\
+}
+
+\newcommand{\resumeSubheading}[1]{
+    {\small\textit{#1}}\par
+}
+
+%-------------------- Document --------------------
+\begin{document}
+
+%==================== HEADER ====================
+
+%==================== HEADER ====================
+
+\begin{center}
+    {\LARGE\textbf{Pagoti Hemanth Naidu}}\\[6pt]
+
+    \small
+    \href{https://github.com/hemanth-117}
+    {\faGithub\ hemanth-117}
+    \quad $|$ \quad
+    \href{https://leetcode.com/u/h210050117/}
+    {\faCode\ LeetCode}
+    \quad $|$ \quad
+    \href{tel:+91-9392387535}
+    {\faPhone\ +91-9392387535}
+    \\[4pt]
+
+    \href{https://www.linkedin.com/in/hemanth-naidu-pagoti-06727a28a/}
+    {\faLinkedin\ Hemanth-Naidu-Pagoti}
+    \quad $|$ \quad
+    \href{mailto:hemanthnaidupagoti@gmail.com}
+    {\faEnvelope\ hemanthnaidupagoti@gmail.com}
+\end{center}
+\vspace{-5pt}
+
+%==================== EDUCATION ====================
+
+\resumeSection{Education}
+
+\resumeEntry{Indian Institute of Technology Bombay}{2021 -- 2025}
+B.Tech in Computer Science and Engineering
+\hfill \textbf{CPI: 8.31/10}
+
+%==================== EXPERIENCE ====================
+
+\resumeSection{Experience}
+
+\resumeEntry{Temple}{Jan 2026 -- Present}
+\resumeSubheading{Software Development $|$ Full-Time $|$ Go}
+
+\begin{itemize}
+    \item Working on a \textbf{real-time L2 metric computation pipeline} to derive multiple user-level metrics from device-generated L1 data.
+
+    \item Added \textbf{recomputation support} for user data, including admin-triggered workflows to regenerate data using available user history.
+
+    \item Developed latency-optimized backend APIs and asynchronous worker flows, leveraging \textbf{caching, database optimizations, distributed tracing, debugging events, and alerting} to improve performance and service observability.
+\end{itemize}
+
+\resumeEntry{Dream11}{August 2025 -- Jan 2026}
+\resumeSubheading{Software Development $|$ Full-Time $|$ Java, TypeScript}
+
+\begin{itemize}
+    \item Dockerized the entire \textbf{CodePush Server} and wrote automated API tests to improve deployment consistency, coverage, and reliability.
+
+    \item Added a new API for updating release details and fork-out time in \textbf{Delivr}, improving release management.
+
+    \item Migrated \textbf{Pulse} analytics from \textbf{BigQuery} to \textbf{ClickHouse} to reduce infrastructure costs and added APIs to collect more detailed session analytics.
+
+    \item Implemented a Sampling Configuration API for SDK-based OpenTelemetry sampling.
+\end{itemize}
+
+\resumeEntry{Jaguar Land Rover}{May -- July 2024}
+\resumeSubheading{Software Development $|$ Company Internship $|$ Python}
+
+\begin{itemize}
+    \item Automated data extraction from \textbf{GitLab, Jira}, and \textbf{Snyk} using APIs and \textbf{GCP Cloud Functions} for the SDV project.
+
+    \item Created \textbf{Tableau dashboards} to visualize data insights, linking Jira tickets with GitLab commits for analysis.
+
+    \item Leveraged \textbf{Microsoft Phi-3} for suggestions, code ratings, and tracking requirements completion in Jira and GitLab.
+\end{itemize}
+
+%==================== PROJECTS ====================
+
+\resumeSection{Key Projects}
+
+\resumeEntry{Fake News Detection}{Sept -- Oct 2023}
+\resumeSubheading{Guide: Prof. Pushpak Bhattacharyya $|$ Course Project: Natural Language Processing \hfill IIT Bombay}
+
+\begin{itemize}
+    \item Implemented a \textbf{fake news detection} model using statistical, neural, and external text classification features.
+
+    \item Enhanced \textbf{stance detection} by integrating skip-thought vectors, TF-IDF, and heuristic-based external features.
+
+    \item Optimized the model with cross-entropy loss, classifying news into agree, disagree, discuss, and unrelated.
+\end{itemize}
+
+\resumeEntry{xv6 Optimization}{Sept -- Oct 2023}
+\resumeSubheading{Guide: Prof. Purushottam Kulkarni $|$ Course Project: Operating Systems \hfill IIT Bombay}
+
+\begin{itemize}
+    \item Developed advanced \textbf{system calls} and process scheduler algorithms in xv6 for improved performance.
+
+    \item Implemented \textbf{lazy page allocation} with page fault handling in the xv6 memory management system.
+
+    \item Implemented \textbf{threading, synchronization mechanisms}, and filesystem operations for concurrency in xv6.
+\end{itemize}
+
+\resumeEntry{IPCP Prefetcher for Spec and Graph Workloads}{Apr -- May 2023}
+\resumeSubheading{Guide: Prof. Biswa $|$ Course Project: Computer Architecture \hfill IIT Bombay}
+
+\begin{itemize}
+    \item Obtained an average \textbf{1.05x speedup} in IPC on various traces by enhancing the IPCP prefetcher using \textbf{ChampSim}.
+
+    \item Increased cache hit rates and prefetch accuracy through customized modifications to the IPCP prefetcher.
+\end{itemize}
+
+%==================== ACHIEVEMENTS ====================
+
+\resumeSection{Achievements}
+
+\begin{itemize}
+    \item Secured \textbf{All India Rank 232} in \textbf{JEE Advanced} among over 150 thousand candidates \hfill{\small\textit{(2021)}}
+
+    \item Achieved \textbf{All India Rank 436} in \textbf{JEE Main} among over 1.2 million candidates \hfill{\small\textit{(2021)}}
+
+    \item Secured \textbf{State Rank 48} in AP-EAMCET and \textbf{State Rank 185} in TS-EAMCET \hfill{\small\textit{(2021)}}
+
+    \item Secured \textbf{All India Rank 364} in \textbf{KVPY} among over 50 thousand candidates \hfill{\small\textit{(2020)}}
+\end{itemize}
+
+%==================== TECHNICAL SKILLS ====================
+
+\resumeSection{Technical Skills}
+
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{3.4cm} X@{}}
+    Programming: & Python, C++, Java, Assembly, Go \\
+
+    Web Development: & React, React Native, JavaScript \\
+
+    Software: & Git, \LaTeX, GDB, Sphinx, Doxygen, Jupyter, Docker, Wireshark, GitLab, Jira, Snyk \\
+
+    Packages: & NumPy, Matplotlib, FLTK, Pandas, Torchvision, PyTorch
+\end{tabularx}
+
+%==================== ADD NEW SECTIONS BELOW ====================
+
+% Example:
+%
+% \resumeSection{Publications}
+% Add publication details here.
+%
+% \resumeSection{Open Source}
+% Add open-source contributions here.
+%
+% \resumeSection{Certifications}
+% Add certifications here.
+
+\end{document}
